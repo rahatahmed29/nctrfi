@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NCTRFI Conference 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,22 +31,26 @@
       <div class="flex justify-between items-center py-4">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <a href="#"><img src="./images/logo.png" alt="Logo" class="h-12"></a>
+          <a href="index.html"><img src="./images/logo.png" alt="Logo" class="h-12"></a>
         </div>
         <!-- Links -->
         <div class="hidden md:flex space-x-6 font-medium">
-          <a href="#" class="hover:text-yellow-300">Home</a>
-          <div class="relative group">
-            <a href="#" class="hover:text-yellow-300">Authors</a>
-            <div class="absolute hidden group-hover:block bg-white text-gray-700 rounded-md shadow-lg mt-2">
-              <a href="#" class="block px-4 py-2 hover:bg-sky-100">Call for Paper</a>
-              <a href="#" class="block px-4 py-2 hover:bg-sky-100">Guideline</a>
-            </div>
-          </div>
-          <a href="#" class="hover:text-yellow-300">Important Dates</a>
-          <a href="#" class="hover:text-yellow-300">Committee</a>
-          <a href="#" class="hover:text-yellow-300">Conference Schedule</a>
-          <a href="#" class="hover:text-yellow-300"> Contact</a>
+          <a href="index.html" class="hover:text-yellow-300">Home</a>
+          <details class="relative group text-white">
+  <summary class="cursor-pointer list-none hover:text-yellow-300">
+    Authors
+  </summary>
+  
+  <div class="absolute bg-white text-gray-700 rounded-md shadow-lg mt-2 z-10">
+    <a href="papers.html" class="block px-4 py-2 hover:bg-sky-100">Call for Paper</a>
+    <a href="guideline.html" class="block px-4 py-2 hover:bg-sky-100">Guideline</a>
+  </div>
+</details>
+
+          <a href="dates.html" class="hover:text-yellow-300">Important Dates</a>
+          <a href="committe.html" class="hover:text-yellow-300">Committee</a>
+          <a href="conf_sch.html" class="hover:text-yellow-300">Conference Schedule</a>
+          <a href="contact.html" class="hover:text-yellow-300"> Contact</a>
         </div>
         <!-- Hamburger -->
         <div class="md:hidden">
@@ -59,22 +64,23 @@
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-sky-800">
       <a href="#" class="block text-white">Home</a>
       <div>
-        <a href="#" class="block text-white">Authors</a>
+        
+        <a href="authors.html" class="block text-white">Authors</a>
         <div class="pl-4">
-          <a href="#" class="block text-sky-100">Call for Paper</a>
-          <a href="#" class="block text-sky-100">Guideline</a>
+          <a href="papers.html" class="block text-sky-100">Call for Paper</a>
+          <a href="guideline.html" class="block text-sky-100">Guideline</a>
         </div>
       </div>
-      <a href="#" class="block text-white">Important Dates</a>
-      <a href="#" class="block text-white">Committee</a>
-      <a href="#" class="block text-white">Conference Schedule</a>
-      <a href="#" class="block text-white">Contact</a>
+      <a href="dates.html" class="block text-white">Important Dates</a>
+      <a href="committe.html" class="block text-white">Committee</a>
+      <a href="conf_sch.html" class="block text-white">Conference Schedule</a>
+      <a href="contact.html" class="block text-white">Contact</a>
       
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center p-6 text-white" style="background-image: url('./images/rbg.jpg');">
+  <section class="relative overflow-hidden bg-cover bg-center p-6 text-white" style="background-image: url('./images/rbg.jpg');">
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
       <img src="./images/logo.png" class="w-32" alt="Main Logo">
       <h1 class="text-3xl md:text-4xl font-bold text-blue-900 text-center max-w-3xl leading-snug">
@@ -97,7 +103,7 @@
       </div>
       <div class="md:w-4/5 w-full overflow-hidden">
         <marquee class="text-sky-900 font-medium" behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-          <a href="https://surl.li/sigkqv" class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Register Now</a>
+          <a href="https://docs.google.com/forms/d/1mqpfKabCVNr1xM_S1ciVudcC72lvKJ-EV1Fi7Nh8SX4/viewform?edit_requested=true" class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Register Now</a>
         </marquee>
       </div>
     </div>
@@ -236,14 +242,16 @@ impactful innovations in the fields of technology, education, sustainability, an
 research. The conference will provide a vibrant platform for students, researchers, and
 academics to exchange insights, present original work, and engage in thoughtful dialogue on
 how transformative research can shape a better, more sustainable future.
-We warmly invite you to participate by submitting your research paper, attending the technical
+<p class="leading-relaxed text-lg">
+    We warmly invite you to participate by submitting your research paper, attending the technical
 sessions, or contributing as a poster presenter. Your presence and expertise would greatly enrich
 the discourse and collaboration this event aims to foster.
 Please send your abstract and/or poster to office@ric.ku.ac.bd or director@ric.ku.ac.bd, and
 visit our website (https://ric.ku.ac.bd/) for detailed information regarding registration, paper
 submission, and important deadlines.
 We look forward to your valuable participation in making NCTRFI a landmark event in
-advancing transformative research and innovation</p>
+advancing transformative research and innovation.
+</p></p>
       </div>
     </div>
   </section>
@@ -261,18 +269,18 @@ advancing transformative research and innovation</p>
     <!-- Coordinator & Technical Chair side by side -->
     <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl">
   <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
-        <h3 class="text-xl font-bold text-sky-800 mb-4"></h3>
+        <h3 class="text-xl font-bold text-sky-800 mb-4">Patron</h3>
         <div class="flex justify-center"><img src="./images/harunsir.jpg" class="w-[250px] rounded-lg mb-2"></div>
         <h4 class="font-semibold">Md. Harunor Rashid Khan, PhD</h4>
-        <p class="text-sm text-gray-600">Professor, Physics, KU</p>
+        <p class="text-sm text-gray-600">Pro Vice-chancellor, KU</p>
       </div>
 
       <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
-        <h3 class="text-xl font-bold text-sky-800 mb-4">Convenor</h3>
+        <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
        <div class="flex justify-center"> <img src="./images/didarsir.jpg" class="w-[250px]  rounded-lg mb-2"></div>
         <h4 class="font-semibold">Dr. Kazi Mohammed Didarul Islam
-Professor</h4>
-        <p class="text-sm text-gray-600">Convenor, NCTRIF<br>Professor, BGE, KU</p>
+</h4>
+        <p class="text-sm text-gray-600">  Professor, BGE, KU</p>
       </div>
     
     </div>
@@ -290,20 +298,8 @@ Professor</h4>
   </footer>
 
   <!-- Scripts -->
-  <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-
-    const cards = document.querySelectorAll('.carousel-card');
-    let index = 0;
-    setInterval(() => {
-      cards.forEach((card, i) => {
-        card.classList.toggle('opacity-0', i !== index);
-        card.classList.toggle('pointer-events-none', i !== index);
-      });
-      index = (index + 1) % cards.length;
-    }, 3000);
+  <script src="index.js">
+    
   </script>
 </body>
 
