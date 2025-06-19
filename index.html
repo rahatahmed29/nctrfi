@@ -6,21 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NCTRFI Conference 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <style>
     /* Ensure dropdown appears above hero */
     nav {
       position: relative;
       z-index: 50;
     }
+
     .hero-section {
       position: relative;
       z-index: 10;
     }
+
+      @keyframes slideTwo {
+    0%, 45% {
+      transform: translateX(0%);
+    }
+    50%, 95% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .carousel-track {
+    animation: slideTwo 8s ease-in-out infinite;
+  }
   </style>
 </head>
 
@@ -37,15 +57,15 @@
         <div class="hidden md:flex space-x-6 font-medium">
           <a href="index.html" class="hover:text-yellow-300">Home</a>
           <details class="relative group text-white">
-  <summary class="cursor-pointer list-none hover:text-yellow-300">
-    Authors
-  </summary>
-  
-  <div class="absolute bg-white text-gray-700 rounded-md shadow-lg mt-2 z-10">
-    <a href="papers.html" class="block px-4 py-2 hover:bg-sky-100">Call for Paper</a>
-    <a href="guideline.html" class="block px-4 py-2 hover:bg-sky-100">Guideline</a>
-  </div>
-</details>
+            <summary class="cursor-pointer list-none hover:text-yellow-300">
+              Authors
+            </summary>
+
+            <div class="absolute bg-white text-gray-700 rounded-md shadow-lg mt-2 z-10">
+              <a href="papers.html" class="block px-4 py-2 hover:bg-sky-100">Call for Paper</a>
+              <a href="guideline.html" class="block px-4 py-2 hover:bg-sky-100">Guideline</a>
+            </div>
+          </details>
 
           <a href="dates.html" class="hover:text-yellow-300">Important Dates</a>
           <a href="committe.html" class="hover:text-yellow-300">Committee</a>
@@ -64,7 +84,7 @@
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-sky-800">
       <a href="#" class="block text-white">Home</a>
       <div>
-        
+
         <a href="authors.html" class="block text-white">Authors</a>
         <div class="pl-4">
           <a href="papers.html" class="block text-sky-100">Call for Paper</a>
@@ -75,18 +95,19 @@
       <a href="committe.html" class="block text-white">Committee</a>
       <a href="conf_sch.html" class="block text-white">Conference Schedule</a>
       <a href="contact.html" class="block text-white">Contact</a>
-      
+
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden bg-cover bg-center p-6 text-white" style="background-image: url('./images/rbg.jpg');">
+  <section class="relative overflow-hidden bg-cover bg-center p-6 text-white"
+    style="background-image: url('./images/rbg.jpg');">
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
       <img src="./images/logo.png" class="w-32" alt="Main Logo">
       <h1 class="text-3xl md:text-4xl font-bold text-blue-900 text-center max-w-3xl leading-snug">
         National Conference on Transformative Research and Its Future Impacts (NCTRFI)
       </h1>
-      <div class="flex items-center gap-2">
+      <div class="flex overflow-hidden  items-center gap-2">
         <img src="./images/kulogo.png" class="w-16" alt="KU">
         <div class="h-12 w-1 bg-white mx-1"></div>
         <img src="./images/riclogo.png" class="w-16" alt="RIC">
@@ -102,8 +123,10 @@
         <span>Important Notices</span>
       </div>
       <div class="md:w-4/5 w-full overflow-hidden">
-        <marquee class="text-sky-900 font-medium" behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-          <a href="https://docs.google.com/forms/d/1mqpfKabCVNr1xM_S1ciVudcC72lvKJ-EV1Fi7Nh8SX4/viewform?edit_requested=true" class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Register Now</a>
+        <marquee class="text-sky-900 font-medium" behavior="scroll" direction="left" scrollamount="5"
+          onmouseover="this.stop();" onmouseout="this.start();">
+          <a href="https://docs.google.com/forms/d/1mqpfKabCVNr1xM_S1ciVudcC72lvKJ-EV1Fi7Nh8SX4/viewform?edit_requested=true"
+            class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Register Now</a>
         </marquee>
       </div>
     </div>
@@ -112,82 +135,37 @@
   <!-- Keynote & Schedule Section -->
   <section class="px-5 py-10 bg-white">
     <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="flex flex-col justify-center border-l-4 border-sky-700 pl-6">
-          <h2 class="text-3xl font-bold mb-4 text-sky-800">Speakers Highlight</h2>
-          <p class="text-gray-700">Experience the cutting-edge ideas from leading professionals.</p>
+     <div class="grid md:grid-cols-2 gap-8">
+  <!-- Left Text Section -->
+  <div class="flex flex-col justify-center border-l-4 border-sky-700 pl-6">
+    <h2 class="text-3xl font-bold mb-4 text-sky-800">Speakers Highlight</h2>
+    <p class="text-gray-700">Experience the cutting-edge ideas from leading professionals.</p>
+  </div>
+
+  <!-- Right Carousel Section -->
+  <div class="relative min-h-[350px] flex items-center justify-center">
+    <div class="overflow-hidden rounded-xl shadow-lg w-full max-w-xl">
+      <div class="flex w-[200%] carousel-track">
+        
+        <!-- Slide 1 -->
+        <div class="w-full flex items-center justify-center bg-white">
+          <img src="./images/keynote.jpg"
+               alt="Speaker 1"
+               class="object-contain h-[300px] sm:h-[350px] w-full" />
         </div>
-        <div class="relative min-h-[350px]">
-         <!-- Card rotation handled via JS -->
-<div class="carousel-card absolute inset-0 bg-gradient-to-br from-sky-100 to-white rounded-lg shadow-lg p-6 text-center opacity-100 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl pointer-events-auto">
 
-              <p class="text-3xl font-bold text-blue-900 pb-3">Keynote Speaker</p>
-
-  <img src="./images/1516247727611.jpg" 
-       class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-sky-300 shadow-md" alt="K.V.S. Hari">
-  <h3 class="text-2xl font-semibold text-sky-900 mb-1">K.V.S. Hari</h3>
-  <p class="text-gray-700 leading-relaxed mb-4">
-    Director, Centre for Brain Research<br>Professor, ECE, IISc Bangalore
-  </p>
-  <hr class="border-sky-300 mx-auto w-16 mb-4" />
-  <div class="text-sm text-sky-600 flex justify-center gap-4 items-center font-medium">
-    <div class="flex items-center gap-1">
-      <i class="fa fa-clock" aria-hidden="true"></i>
-      <span>9:00–10:00 AM</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>25 June 2025</span>
-    </div>
-  </div>
-</div>
-<!-- Card-2 -->
-         <div class="carousel-card absolute inset-0 bg-gradient-to-br from-sky-100 to-white rounded-lg shadow-lg p-6 text-center opacity-0 pointer-events-none transform transition-opacity duration-500 ease-in-out">
-
-  <img src="https://spicscon.org/2024/frontend/images/DMH.jpg" 
-       alt="Moshiul Hoque"
-       class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-sky-300 shadow-md">
-  <h3 class="text-2xl font-semibold text-sky-900 mb-1">Moshiul Hoque</h3>
-  <p class="text-gray-700 leading-relaxed mb-4">
-    Chair, IEEE BDS<br>Professor, CSE, CUET
-  </p>
-  <hr class="border-sky-300 mx-auto w-16 mb-4" />
-  <div class="text-sm text-sky-600 flex justify-center gap-6 items-center font-medium">
-    <div class="flex items-center gap-2">
-      <i class="fa fa-clock" aria-hidden="true"></i>
-      <span>11:00–12:00 PM</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>25 June, 2025</span>
-    </div>
-  </div>
-</div>
-<!-- card-3 -->
- <div class="carousel-card absolute inset-0 bg-gradient-to-br from-sky-100 to-white rounded-lg shadow-lg p-6 text-center opacity-0 pointer-events-none transform transition-opacity duration-500 ease-in-out">
-
-              <p class="text-lg pb-5"></p>
-
-  <img src="" 
-       class="w-24 h-24 rounded-full mx-auto mb-4 ring-4 ring-sky-300 shadow-md" alt="K.V.S. Hari">
-  <h3 class="text-2xl font-semibold text-sky-900 mb-1">Mohammad Amir</h3>
-  <p class="text-gray-700 leading-relaxed mb-4">
-    Director, Centre for Brain Research<br>Professor, ECE, IISc Bangalore
-  </p>
-  <hr class="border-sky-300 mx-auto w-16 mb-4" />
-  <div class="text-sm text-sky-600 flex justify-center gap-4 items-center font-medium">
-    <div class="flex items-center gap-1">
-      <i class="fa fa-clock" aria-hidden="true"></i>
-      <span>9:00–10:00 AM</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      <span>25 June 2025</span>
-    </div>
-  </div>
-</div>
+        <!-- Slide 2 -->
+        <div class="w-full flex items-center justify-center bg-white">
+          <img src="./images/guest.jpg"
+               alt="Speaker 2"
+               class="object-contain h-[300px] sm:h-[350px] w-full" />
         </div>
+
       </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Important Dates Table -->
       <div class="overflow-x-auto mt-10">
@@ -202,90 +180,95 @@
               <td class="px-6 py-3  text-gray-600">22 June 2025 </td>
             </tr>
             <tr class="bg-sky-50">
-              <td class="px-6 py-3 font-semibold text-gray-700">Notification of Acceptance 
-</td>
+              <td class="px-6 py-3 font-semibold text-gray-700">Notification of Acceptance
+              </td>
               <td class="px-6 py-3 text-gray-600"><span class="">23 June 2025</span></td>
             </tr>
             <tr>
               <td class="px-6 py-3 font-semibold text-gray-700">Conference Date</td>
               <td class="px-6 py-3 text-gray-600"><span class="">25 June 2025</span></td>
             </tr>
-           
+
           </tbody>
         </table>
       </div>
 
       <!-- Description -->
       <div class="mt-10 text-gray-700">
-        <h2 class="text-3xl text-center font-bold mb-4">National Conference on Transformative Research and Its Future Impacts (NCTRFI)</h2>
-        <p class="leading-relaxed text-lg">We are pleased to invite you to the National Conference on Transformative Research and Its
-Future Impacts (NCTRFI), to be held on 25 June 2025 at Khulna University, Khulna-9208.
-The Research and Innovation Centre will organize it. This national-level conference brings
-together leading minds from academia, research, and industry to explore pioneering ideas and
-impactful innovations in the fields of technology, education, sustainability, and future-oriented
-research. The conference will provide a vibrant platform for students, researchers, and
-academics to exchange insights, present original work, and engage in thoughtful dialogue on
-how transformative research can shape a better, more sustainable future.
-We warmly invite you to participate by submitting your research paper, attending the technical
-sessions, or contributing as a poster presenter. Your presence and expertise would greatly enrich
-the discourse and collaboration this event aims to foster.
-</p>
-<p class="leading-relaxed text-lg">Please send your abstract and/or poster to office@ric.ku.ac.bd or director@ric.ku.ac.bd, and
-visit our website (https://ric.ku.ac.bd/) for detailed information regarding registration, paper
-submission, and important deadlines.
-We look forward to your valuable participation in making NCTRFI a landmark event in
-advancing transformative research and innovation. We are pleased to invite you to the National Conference on Transformative Research and Its
-Future Impacts (NCTRFI), to be held on 25 June 2025 at Khulna University, Khulna-9208.
-The Research and Innovation Centre will organize it. This national-level conference brings
-together leading minds from academia, research, and industry to explore pioneering ideas and
-impactful innovations in the fields of technology, education, sustainability, and future-oriented
-research. The conference will provide a vibrant platform for students, researchers, and
-academics to exchange insights, present original work, and engage in thoughtful dialogue on
-how transformative research can shape a better, more sustainable future.
-<p class="leading-relaxed text-lg">
-    We warmly invite you to participate by submitting your research paper, attending the technical
-sessions, or contributing as a poster presenter. Your presence and expertise would greatly enrich
-the discourse and collaboration this event aims to foster.
-Please send your abstract and/or poster to office@ric.ku.ac.bd or director@ric.ku.ac.bd, and
-visit our website (https://ric.ku.ac.bd/) for detailed information regarding registration, paper
-submission, and important deadlines.
-We look forward to your valuable participation in making NCTRFI a landmark event in
-advancing transformative research and innovation.
-</p></p>
+        <h2 class="text-3xl text-center font-bold mb-4">National Conference on Transformative Research and Its Future
+          Impacts (NCTRFI)</h2>
+        <p class="leading-relaxed text-lg">We are pleased to invite you to the National Conference on Transformative
+          Research and Its
+          Future Impacts (NCTRFI), to be held on 25 June 2025 at Khulna University, Khulna-9208.
+          The Research and Innovation Centre will organize it. This national-level conference brings
+          together leading minds from academia, research, and industry to explore pioneering ideas and
+          impactful innovations in the fields of technology, education, sustainability, and future-oriented
+          research. The conference will provide a vibrant platform for students, researchers, and
+          academics to exchange insights, present original work, and engage in thoughtful dialogue on
+          how transformative research can shape a better, more sustainable future.
+          We warmly invite you to participate by submitting your research paper, attending the technical
+          sessions, or contributing as a poster presenter. Your presence and expertise would greatly enrich
+          the discourse and collaboration this event aims to foster.
+        </p>
+        <p class="leading-relaxed text-lg">Please send your abstract and/or poster to office@ric.ku.ac.bd or
+          director@ric.ku.ac.bd, and
+          visit our website (https://ric.ku.ac.bd/) for detailed information regarding registration, paper
+          submission, and important deadlines.
+          We look forward to your valuable participation in making NCTRFI a landmark event in
+          advancing transformative research and innovation. We are pleased to invite you to the National Conference on
+          Transformative Research and Its
+          Future Impacts (NCTRFI), to be held on 25 June 2025 at Khulna University, Khulna-9208.
+          The Research and Innovation Centre will organize it. This national-level conference brings
+          together leading minds from academia, research, and industry to explore pioneering ideas and
+          impactful innovations in the fields of technology, education, sustainability, and future-oriented
+          research. The conference will provide a vibrant platform for students, researchers, and
+          academics to exchange insights, present original work, and engage in thoughtful dialogue on
+          how transformative research can shape a better, more sustainable future.
+        <p class="leading-relaxed text-lg">
+          We warmly invite you to participate by submitting your research paper, attending the technical
+          sessions, or contributing as a poster presenter. Your presence and expertise would greatly enrich
+          the discourse and collaboration this event aims to foster.
+          Please send your abstract and/or poster to office@ric.ku.ac.bd or director@ric.ku.ac.bd, and
+          visit our website (https://ric.ku.ac.bd/) for detailed information regarding registration, paper
+          submission, and important deadlines.
+          We look forward to your valuable participation in making NCTRFI a landmark event in
+          advancing transformative research and innovation.
+        </p>
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Conference Members Section -->
   <section class="bg-sky-50 py-12">
-  <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-8">
-    <!-- Chief Patron full width -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center w- max-w-md mx-auto">
-      <h3 class="text-xl font-bold text-sky-800 mb-4">Chief Patron</h3>
-      <img src="https://spicscon.org/2024/frontend/images/Prof Dr Md Rezaul Karim.jpeg" class="w-[250px] rounded-lg mb-2">
-      <h4 class="font-semibold">Prof. Dr. Md. Rezaul Karim</h4>
-      <p class="text-sm text-gray-600">Vice-chancellor, KU</p>
-    </div>
-    <!-- Coordinator & Technical Chair side by side -->
-    <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl">
-  <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
-        <h3 class="text-xl font-bold text-sky-800 mb-4">Patron</h3>
-        <div class="flex justify-center"><img src="./images/harunsir.jpg" class="w-[250px] rounded-lg mb-2"></div>
-        <h4 class="font-semibold">Md. Harunor Rashid Khan, PhD</h4>
-        <p class="text-sm text-gray-600">Pro Vice-chancellor, KU</p>
+    <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-8">
+      <!-- Chief Patron full width -->
+      <div class="bg-white rounded-lg shadow-md p-4 text-center w-max-w-md mx-auto">
+        <h3 class="text-xl font-bold text-sky-800 mb-4">Chief Patron</h3>
+        <img src="./images/vcsir.jpg" class="w-full rounded-lg mb-2">
+        <h4 class="font-semibold">Prof. Dr. Md. Rezaul Karim</h4>
+        <p class="text-sm text-gray-600">Vice-chancellor, KU</p>
       </div>
+      <!-- Coordinator & Technical Chair side by side -->
+      <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl">
+        <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
+          <h3 class="text-xl font-bold text-sky-800 mb-4">Patron</h3>
+          <div class="flex justify-center"><img src="./images/patronpro.jpg" class="w-full rounded-lg mb-2"></div>
+          <h4 class="font-semibold">Md. Harunor Rashid Khan, PhD</h4>
+          <p class="text-sm text-gray-600">Pro Vice-chancellor, KU</p>
+        </div>
 
-      <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
-        <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
-       <div class="flex justify-center"> <img src="./images/didarsir.jpg" class="w-[250px]  rounded-lg mb-2"></div>
-        <h4 class="font-semibold">Dr. Kazi Mohammed Didarul Islam
-</h4>
-        <p class="text-sm text-gray-600">  Professor, BGE, KU</p>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
+          <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
+          <div class="flex justify-center"> <img src="./images/patron.jpg" class="w-full  rounded-lg mb-2"></div>
+          <h4 class="font-semibold">Prof. Dr. Noor Un Nabi
+          </h4>
+          <p class="text-sm text-gray-600"> Treasurer, Khulna University</p>
+        </div>
+
       </div>
-    
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Footer -->
@@ -293,13 +276,14 @@ advancing transformative research and innovation.
     <div class="max-w-4xl mx-auto">
       <p class="font-semibold text-lg">&copy; 2025 NCTRFI</p>
       <p class="text-sm">All Rights Reserved</p>
-      <p class="mt-2 text-sm">Developed By<br><span class="font-semibold">Md. Rahat Ahmed Khan</span>, Undergraduate Student, ECE Discipline – KU<br>
+      <p class="mt-2 text-sm">Developed By<br><span class="font-semibold">Md. Rahat Ahmed Khan</span>, Undergraduate
+        Student, ECE Discipline – KU<br>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="index.js">
-    
+
   </script>
 </body>
 
