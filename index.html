@@ -14,6 +14,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+ 
+
   <style>
     /* Ensure dropdown appears above hero */
     nav {
@@ -26,31 +28,19 @@
       z-index: 10;
     }
 
-      @keyframes slideTwo {
-    0%, 45% {
-      transform: translateX(0%);
-    }
-    50%, 95% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
+    
 
-  .carousel-track {
-    animation: slideTwo 8s ease-in-out infinite;
-  }
+  
   </style>
 </head>
 
-<body class="bg-gradient-to-b from-white to-sky-50 font-[Lora]">
+<body class="bg-gradient-to-b from-white to-sky-100 font-[Lora]">
   <!-- Navbar -->
   <nav class="bg-gradient-to-r from-sky-700 to-sky-900 shadow-lg text-white">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="flex justify-between items-center py-4">
+      <div class="flex  justify-between items-center py-4">
         <!-- Logo -->
-        <div class="flex-shrink-0">
+        <div class="flex-shrink-0 ">
           <a href="index.html"><img src="./images/logo.png" alt="Logo" class="h-12"></a>
         </div>
         <!-- Links -->
@@ -103,14 +93,14 @@
   <section class="relative overflow-hidden bg-cover bg-center p-6 text-white"
     style="background-image: url('./images/rbg.jpg');">
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-      <img src="./images/logo.png" class="w-32" alt="Main Logo">
+      <img src="./images/logo.png" class="w-48" alt="Main Logo">
       <h1 class="text-3xl md:text-4xl font-bold text-blue-900 text-center max-w-3xl leading-snug">
         National Conference on Transformative Research and Its Future Impacts (NCTRFI)
       </h1>
       <div class="flex overflow-hidden  items-center gap-2">
         <img src="./images/kulogo.png" class="w-16" alt="KU">
         <div class="h-12 w-1 bg-white mx-1"></div>
-        <img src="./images/riclogo.png" class="w-16" alt="RIC">
+        <img src="./images/riclogo.png" class="w-20" alt="RIC">
       </div>
     </div>
   </section>
@@ -126,7 +116,7 @@
         <marquee class="text-sky-900 font-medium" behavior="scroll" direction="left" scrollamount="5"
           onmouseover="this.stop();" onmouseout="this.start();">
           <a href="https://docs.google.com/forms/d/1mqpfKabCVNr1xM_S1ciVudcC72lvKJ-EV1Fi7Nh8SX4/viewform?edit_requested=true"
-            class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Register Now</a>
+            class="hover:underline"><i class="fa fa-plus-square mr-1"></i>Click for registration</a>
         </marquee>
       </div>
     </div>
@@ -137,33 +127,49 @@
     <div class="max-w-6xl mx-auto">
      <div class="grid md:grid-cols-2 gap-8">
   <!-- Left Text Section -->
-  <div class="flex flex-col justify-center border-l-4 border-sky-700 pl-6">
+  <div class="flex flex-col  justify-center border-l-4 border-sky-700 pl-6">
     <h2 class="text-3xl font-bold mb-4 text-sky-800">Speakers Highlight</h2>
-    <p class="text-gray-700">Experience the cutting-edge ideas from leading professionals.</p>
+    <p class="text-gray-700 text-xl">Experience the cutting-edge ideas from leading professionals.</p>
   </div>
 
   <!-- Right Carousel Section -->
-  <div class="relative min-h-[350px] flex items-center justify-center">
-    <div class="overflow-hidden rounded-xl shadow-lg w-full max-w-xl">
-      <div class="flex w-[200%] carousel-track">
-        
-        <!-- Slide 1 -->
-        <div class="w-full flex items-center justify-center bg-white">
-          <img src="./images/keynote.jpg"
-               alt="Speaker 1"
-               class="object-contain h-[300px] sm:h-[350px] w-full" />
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="w-full flex items-center justify-center bg-white">
-          <img src="./images/guest.jpg"
-               alt="Speaker 2"
-               class="object-contain h-[300px] sm:h-[350px] w-full" />
-        </div>
-
-      </div>
+  <div id="default-carousel" class="relative w-full max-w-4xl mx-auto mt-10" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <!-- Slide 1 -->
+    <div class="hidden  duration-800 ease-in-out" data-carousel-item>
+      <img src="./images/keynote.jpg" class="block  w-full h-full object-contain" alt="Image 1">
+    </div>
+    <!-- Slide 2 -->
+    <div class="hidden duration-800 ease-in-out" data-carousel-item>
+      <img src="./images/groupvip.jpg" class="block w-full h-full object-contain" alt="Image 2">
+    </div>
+    <!-- Slide 3 -->
+    <div class="hidden duration-800 ease-in-out" data-carousel-item>
+      <img src="./images/guest.jpg" class="block w-full h-full object-contain" alt="Image 3">
     </div>
   </div>
+
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>
+
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+      &#9664;
+    </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+      &#9654;
+    </span>
+  </button>
+</div>
+
 </div>
 
 
@@ -173,20 +179,20 @@
           <tbody>
             <tr class="bg-sky-50">
               <td class="px-6 py-3 font-semibold text-gray-700">Abstract Submission</td>
-              <td class="px-6 py-3 text-gray-600">22 June 2025</td>
+              <td class="px-6 py-3 text-gray-600">30 June 2025</td>
             </tr>
             <tr>
               <td class="px-6 py-3 font-semibold text-gray-700">Poster Submission</td>
-              <td class="px-6 py-3  text-gray-600">22 June 2025 </td>
+              <td class="px-6 py-3  text-gray-600">30 June 2025 </td>
             </tr>
             <tr class="bg-sky-50">
               <td class="px-6 py-3 font-semibold text-gray-700">Notification of Acceptance
               </td>
-              <td class="px-6 py-3 text-gray-600"><span class="">23 June 2025</span></td>
+              <td class="px-6 py-3 text-gray-600"><span class="">2 July 2025</span></td>
             </tr>
             <tr>
               <td class="px-6 py-3 font-semibold text-gray-700">Conference Date</td>
-              <td class="px-6 py-3 text-gray-600"><span class="">25 June 2025</span></td>
+              <td class="px-6 py-3 text-gray-600"><span class="">10 July 2025</span></td>
             </tr>
 
           </tbody>
@@ -239,27 +245,36 @@
     </div>
   </section>
 
+
+
+
   <!-- Conference Members Section -->
   <section class="bg-sky-50 py-12">
     <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-8">
+       <!-- Chief Patron full width -->
+      <div class="bg-white rounded-lg shadow-md p-4 text-center w-max-w-md mx-auto">
+        <h3 class="text-xl font-bold text-sky-800 mb-4"></h3>
+        <img src="./images/groupvip.jpg" class="w-full rounded-lg mb-2">
+        
+      </div>
       <!-- Chief Patron full width -->
       <div class="bg-white rounded-lg shadow-md p-4 text-center w-max-w-md mx-auto">
         <h3 class="text-xl font-bold text-sky-800 mb-4">Chief Patron</h3>
         <img src="./images/vcsir.jpg" class="w-full rounded-lg mb-2">
         <h4 class="font-semibold">Prof. Dr. Md. Rezaul Karim</h4>
-        <p class="text-sm text-gray-600">Vice-chancellor, KU</p>
+        <p class="text-sm text-gray-600">Vice-chancellor, Khulna University</p>
       </div>
       <!-- Coordinator & Technical Chair side by side -->
       <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl">
         <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
           <h3 class="text-xl font-bold text-sky-800 mb-4">Patron</h3>
           <div class="flex justify-center"><img src="./images/patronpro.jpg" class="w-full rounded-lg mb-2"></div>
-          <h4 class="font-semibold">Md. Harunor Rashid Khan, PhD</h4>
-          <p class="text-sm text-gray-600">Pro Vice-chancellor, KU</p>
+          <h4 class="font-semibold">Prof. Dr. Md. Harunor Rashid Khan</h4>
+          <p class="text-sm text-gray-600">Pro Vice-chancellor, Khulna University</p>
         </div>
 
         <div class="bg-white rounded-lg shadow-md p-4 text-center flex-1">
-          <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
+          <h3 class="text-xl font-bold text-sky-800 mb-4">Patron</h3>
           <div class="flex justify-center"> <img src="./images/patron.jpg" class="w-full  rounded-lg mb-2"></div>
           <h4 class="font-semibold">Prof. Dr. Noor Un Nabi
           </h4>
@@ -267,6 +282,13 @@
         </div>
 
       </div>
+         <div class="bg-white md:w-1/2 p-4 rounded-lg shadow-md  text-center flex-1">
+          <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
+          <div class="flex justify-center"> <img src="./images/patron.jpg" class="w-full  rounded-lg mb-2"></div>
+          <h4 class="font-semibold">Prof. Dr. Noor Un Nabi
+          </h4>
+          <p class="text-sm text-gray-600"> Treasurer, Khulna University</p>
+        </div>
     </div>
   </section>
 
@@ -280,9 +302,11 @@
         Student, ECE Discipline – KU<br>
     </div>
   </footer>
+<script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
 
   <!-- Scripts -->
   <script src="index.js">
+    
 
   </script>
 </body>
