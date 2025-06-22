@@ -14,7 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
- 
+
 
   <style>
     /* Ensure dropdown appears above hero */
@@ -27,10 +27,6 @@
       position: relative;
       z-index: 10;
     }
-
-    
-
-  
   </style>
 </head>
 
@@ -41,14 +37,14 @@
       <div class="flex  justify-between items-center py-6">
         <!-- Logo -->
         <div class="flex-shrink-0 ">
-          
+
         </div>
         <!-- Links -->
         <div class="hidden md:flex space-x-6 font-medium">
           <a href="index.html" class="hover:text-yellow-300">Home</a>
           <details class="relative group text-white">
             <summary class="cursor-pointer list-none hover:text-yellow-300">
-              Authors
+              Author Resources
             </summary>
 
             <div class="absolute bg-white text-gray-700 rounded-md shadow-lg mt-2 z-10">
@@ -75,7 +71,7 @@
       <a href="#" class="block text-white">Home</a>
       <div>
 
-        <a href="authors.html" class="block text-white">Authors</a>
+        <a href="authors.html" class="block text-white">Author Resources</a>
         <div class="pl-4">
           <a href="papers.html" class="block text-sky-100">Call for Paper</a>
           <a href="guideline.html" class="block text-sky-100">Guideline</a>
@@ -121,86 +117,171 @@
       </div>
     </div>
   </section>
+  <!-- Conference highlights images -->
+  <div class="  w-full gap-5 p-5">
+    <div id="default-carousel" class="relative w-full lg:w-2/3   mx-auto " data-carousel="slide">
+      <!-- Carousel wrapper -->
 
-  <!-- Keynote & Schedule Section -->
-  <section class="px-5 py-10 bg-white">
-    <div class="max-w-6xl mx-auto">
-     <div class="grid md:grid-cols-2 gap-8">
-  <!-- Left Text Section -->
-  <div class="flex flex-col  justify-center border-l-4 border-sky-700 pl-6">
-    <h2 class="text-3xl font-bold mb-4 text-sky-800">Speakers Highlight</h2>
-    <p class="text-gray-700 text-xl">Experience the cutting-edge ideas from leading professionals.</p>
-  </div>
-
-  <!-- Right Carousel Section -->
-  <div id="default-carousel" class="relative w-full max-w-4xl mx-auto mt-10" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <!-- Slide 1 -->
-    <div class="hidden  duration-800 ease-in-out" data-carousel-item>
-      <img src="./images/keynote.jpg" class="block  w-full h-full object-contain" alt="Image 1">
-    </div>
-    <!-- Slide 2 -->
-    <div class="hidden duration-800 ease-in-out" data-carousel-item>
-      <img src="./images/groupvip.jpg" class="block w-full h-full object-contain" alt="Image 2">
-    </div>
-    <!-- Slide 3 -->
-    <div class="hidden duration-800 ease-in-out" data-carousel-item>
-      <img src="./images/guest.jpg" class="block w-full h-full object-contain" alt="Image 3">
-    </div>
-  </div>
-
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
-    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-    <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-  </div>
-
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
-      &#9664;
-    </span>
-  </button>
-  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
-      &#9654;
-    </span>
-  </button>
-</div>
-
-</div>
-
-
-      <!-- Important Dates Table -->
-      <div class="overflow-x-auto mt-10">
-        <table class="w-full text-left border-collapse bg-white border">
-          <tbody>
-            <tr class="bg-sky-50">
-              <td class="px-6 py-3 font-semibold text-gray-700">Abstract Submission</td>
-              <td class="px-6 py-3 text-gray-600">30 June 2025</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-3 font-semibold text-gray-700">Poster Submission</td>
-              <td class="px-6 py-3  text-gray-600">30 June 2025 </td>
-            </tr>
-            <tr class="bg-sky-50">
-              <td class="px-6 py-3 font-semibold text-gray-700">Notification of Acceptance
-              </td>
-              <td class="px-6 py-3 text-gray-600"><span class="">02 July 2025</span></td>
-            </tr>
-            <tr>
-              <td class="px-6 py-3 font-semibold text-gray-700">Conference Date</td>
-              <td class="px-6 py-3 text-gray-600"><span class="">10 July 2025</span></td>
-            </tr>
-
-          </tbody>
-        </table>
+      <h1 class="text-3xl w-[300px]   mt-4  font-bold  text-sky-800 border-r-4 border-sky-700 mb-6">Conference Highlights
+      </h1>
+      <div class="relative h-56 sm:min-h-screen overflow-hidden rounded-lg md:h-96">
+        <!-- Slide 1 -->
+        <div class="hidden  duration-800 ease-in-out" data-carousel-item>
+          <img src="./images/cover.jpg" class="block  w-full h-full object-fill" alt="Image 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="hidden duration-800 ease-in-out" data-carousel-item>
+          <img src="./images/schedule2.jpg" class="block w-full h-full object-fill" alt="Image 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="hidden duration-800 ease-in-out" data-carousel-item>
+          <img src="./images/invitation.jpg" class="block w-full h-full object-fill" alt="Image 3">
+        </div>
+        <div class="hidden duration-800 ease-in-out" data-carousel-item>
+          <img src="./images/schedule3.jpg" class="block w-full h-full object-fill" alt="Image 3">
+        </div>
       </div>
 
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+        <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+          &#9664;
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+          &#9654;
+        </span>
+      </button>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="w-full px-5 pt-10  flex justify-center  gap-6">
+
+      <div class="rounded-xl shadow-md overflow-hidden w-full h-56">
+        <h1 class="text-xl w-[200px] sm:w-[300px]  mt-4  font-bold  text-sky-800 border-l-4 pl-2 mb-4 border-sky-700">Location of
+          Inaugural Session</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.0056907331423!2d89.53031007385796!3d22.802253024516975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff8549a235e76d%3A0x427218aff80ca3d3!2sAcharya%20Jagadish%20Chandra%20Bose%20Academic%20Building!5e0!3m2!1sen!2sbd!4v1750614654685!5m2!1sen!2sbd"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="rounded-xl shadow-md overflow-hidden  w-full h-56">
+        <h1 class="text-xl w-[200px] sm:w-[300px] mt-4  font-bold mb-4 text-sky-800 border-l-4 pl-2 border-sky-700">Location of
+          Technical Sessions</h1>
+        <iframe class="text-center"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.963457514565!2d89.5353294!3d22.803817899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff854956629e4b%3A0x4466ee2d59587e4e!2sKazi%20Nazrul%20Islam%20Central%20Library!5e0!3m2!1sen!2sbd!4v1750615144263!5m2!1sen!2sbd"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-x-auto px-5 mt-20">
+    <table class="w-full text-center border-collapse bg-white border">
+      <tbody>
+        <tr class="bg-sky-50">
+          <td class="px-6 py-3 font-semibold text-gray-700">Abstract Submission</td>
+          <td class="px-6 py-3 text-gray-600">30 June 2025</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-3 font-semibold text-gray-700">Poster Submission</td>
+          <td class="px-6 py-3  text-gray-600">30 June 2025 </td>
+        </tr>
+        <tr class="bg-sky-50">
+          <td class="px-6 py-3 font-semibold text-gray-700">Notification of Acceptance
+          </td>
+          <td class="px-6 py-3 text-gray-600"><span class="">03 July 2025</span></td>
+        </tr>
+        <tr>
+          <td class="px-6 py-3 font-semibold text-gray-700">Conference Date</td>
+          <td class="px-6 py-3 text-gray-600"><span class="">10 July 2025</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <!-- Keynote & Schedule Section -->
+  <section class="px-5 py-20 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Left Text Section -->
+        <div class="flex flex-col  justify-center border-l-4 border-sky-700 pl-6">
+          <h2 class="text-3xl font-bold mb-4 text-sky-800">Honourable Speakers</h2>
+          <p class="text-gray-700 text-xl">Experience the cutting-edge ideas from leading professionals.</p>
+        </div>
+
+        <!-- Right Carousel Section -->
+        <div id="default-carousel" class="relative w-full max-w-4xl mx-auto mt-10" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Slide 1 -->
+            <div class="hidden  duration-800 ease-in-out" data-carousel-item>
+              <img src="./images/keynote.jpg" class="block  w-full h-full object-contain" alt="Image 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="hidden duration-800 ease-in-out" data-carousel-item>
+              <img src="./images/groupvip.jpg" class="block w-full h-full object-contain" alt="Image 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="hidden duration-800 ease-in-out" data-carousel-item>
+              <img src="./images/guest.jpg" class="block w-full h-full object-contain" alt="Image 3">
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+            <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 1"
+              data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 2"
+              data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 bg-white rounded-full" aria-label="Slide 3"
+              data-carousel-slide-to="2"></button>
+          </div>
+
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+              &#9664;
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 bg-white/50 rounded-full text-gray-800 hover:bg-white">
+              &#9654;
+            </span>
+          </button>
+        </div>
+
+      </div>
+
+
+
+
       <!-- Description -->
-      <div class="mt-10 text-gray-700">
+      <div class="mt-20  text-gray-700">
         <h2 class="text-3xl text-center font-bold mb-4">National Conference on Transformative Research and Its Future
           Impacts (NCTRFI)</h2>
         <p class="leading-relaxed text-lg">We are pleased to invite you to the National Conference on Transformative
@@ -249,13 +330,13 @@
 
 
   <!-- Conference Members Section -->
-  <section class="bg-sky-50 py-12">
+  <section class="bg-sky-50 py-10 ">
     <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-8">
-       <!-- Chief Patron full width -->
+      <!-- Chief Patron full width -->
       <div class="bg-white rounded-lg shadow-md p-4 text-center w-max-w-md mx-auto">
         <h3 class="text-xl font-bold text-sky-800 mb-4"></h3>
         <img src="./images/groupvip.jpg" class="w-full rounded-lg mb-2">
-        
+
       </div>
       <!-- Chief Patron full width -->
       <div class="bg-white rounded-lg shadow-md p-4 text-center w-max-w-md mx-auto">
@@ -282,13 +363,13 @@
         </div>
 
       </div>
-         <div class="bg-white md:w-1/2 p-4 rounded-lg shadow-md  text-center flex-1">
-          <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
-          <div class="flex justify-center"> <img src="./images/patron.jpg" class="w-full  rounded-lg mb-2"></div>
-          <h4 class="font-semibold">Prof. Dr. Noor Un Nabi
-          </h4>
-          <p class="text-sm text-gray-600"> Treasurer, Khulna University</p>
-        </div>
+      <div class="bg-white md:w-1/2 p-4 rounded-lg shadow-md  text-center flex-1">
+        <h3 class="text-xl font-bold text-sky-800 mb-4">Convener</h3>
+        <div class="flex justify-center"> <img src="./images/patron.jpg" class="w-full  rounded-lg mb-2"></div>
+        <h4 class="font-semibold">Prof. Dr. Noor Un Nabi
+        </h4>
+        <p class="text-sm text-gray-600"> Treasurer, Khulna University</p>
+      </div>
     </div>
   </section>
 
@@ -302,11 +383,11 @@
         Student, ECE Discipline – KU<br>
     </div>
   </footer>
-<script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
 
   <!-- Scripts -->
   <script src="index.js">
-    
+
 
   </script>
 </body>
