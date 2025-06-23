@@ -11,3 +11,5 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
       });
       index = (index + 1) % cards.length;
     }, 3000);
+    //Conference highights JS//
+   
